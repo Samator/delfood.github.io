@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/respons.css">
     <title>DeliveryFood-Сервис доставки еды</title>
@@ -19,7 +20,7 @@
                     <img src="./img/user.svg" alt="user" class="button-icon">
                     <span class="button-text">Войти</span>
                 </button>
-                <button class="button">
+                <button class="button" id="cart-button">
                     <img src="./img/shopping-cart.svg" alt="shopping-cart" class="button-icon">
                     <span class="button-text">Корзина</span>
                 </button>
@@ -38,7 +39,7 @@
                     <input type="text" class="input input-search" placeholder="Поиск блюд и ресторанов">
                 </div>
                 <div class="cards">
-                    <a href="restaurant.html" class="card">
+                    <a href="restaurant.html" class="card animate" id="card">
                         <img src="./img/card/image01.png" alt="" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -55,7 +56,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="restaurant.html" class="card">
+                    <a href="restaurant.html" class="card animate" id="card2">
                         <img src="./img/card/image02.png" alt="" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -72,7 +73,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="restaurant.html" class="card">
+                    <a href="restaurant.html" class="card animate" id="card3">
                         <img src="./img/card/image03.png" alt="" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -89,7 +90,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="restaurant.html" class="card">
+                    <a href="restaurant.html" class="card animate" id="card4">
                         <img src="./img/card/image04.png" alt="" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -106,7 +107,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="restaurant.html" class="card">
+                    <a href="restaurant.html" class="card animate" id="card5">
                         <img src="./img/card/image05.png" alt="" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -123,7 +124,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="restaurant.html" class="card">
+                    <a href="restaurant.html" class="card animate" id="card6">
                         <img src="./img/card/image06.png" alt="" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -160,5 +161,59 @@
             </div>
         </footer>
     </div>
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title">Корзина</h3>
+                <button class="close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-prise">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="caunter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="caunter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-prise">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="caunter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="caunter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-prise">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="caunter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="caunter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-prise">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="caunter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="caunter-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span class="modal-prisetag">1250 ₽</span>
+                <div class="footer-buttons">
+                    <button class="button button-primary">Оформить заказ</button>
+                    <button class="button">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
 </body>
 </html>
